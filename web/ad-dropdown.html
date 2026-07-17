@@ -1,77 +1,105 @@
-<html>
-<body> 
-
+<!--
+==========================================================================
+Project: News Reader Website
+File: ad-dropdown.html
+Description: Advertisement Promotion Landing Page. Showcases special offers
+             and discount codes with a call-to-action button.
+==========================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Ad Promotion</title>
   <style>
+    /* Reset and Layout */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+      margin: 0;
+    }
 
+    /* Promotion Banner Box */
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 40px 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
 
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
 
+    .ad {
+      text-align: center;
+    }
 
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #e53935; /* Eye-catching red promotion color */
+    }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  padding: 20px;
-}
+    p {
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: #666;
+      line-height: 1.6;
+    }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    /* Action button */
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #4caf50;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+    }
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
+    .btn:hover {
+      background-color: #45a049;
+    }
 
-.ad {
-  text-align: center;
-}
+    /* Back Home Link styling */
+    .back-home {
+      display: block;
+      margin-top: 30px;
+      color: #777;
+      text-decoration: none;
+      font-size: 14px;
+    }
 
-h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 20px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background-color: #45a049;
-<style>
-*{
-background-color:#f4f4f4;
-} 
-
-
-
-</style>
+    .back-home:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-<header>
- 
+
   <div class="container">
+    <!-- Masthead Promotion Title -->
     <h1>Special Offer!</h1>
+    
+    <!-- Promotion Advertisement Content -->
     <div class="ad">
       <h2>Get 50% Off</h2>
-      <p>Ad now and enjoy a 50% discount on all category Ad !!</p>
+      <p>Advertise with us now and enjoy a 50% discount on all category advertisements!</p>
       <a href="#" class="btn">Shop Now</a>
     </div>
+
+    <!-- Navigation link back to news homepage -->
+    <a href="mainpage.html" class="back-home">← Back to Homepage</a>
   </div>
+
 </body>
 </html>

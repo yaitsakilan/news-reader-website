@@ -1,31 +1,47 @@
-﻿<html>
+<!--
+==========================================================================
+Project: News Reader Website
+File: mainpage.html
+Description: Landing page resembling a classic newspaper layout.
+             Includes interactive navigation and key news sections.
+==========================================================================
+-->
+<html>
 <head>
+      <meta charset="UTF-8">
       <title>Times of India</title>
       <link rel="stylesheet" href="cssfile.css">
 </head>
 <body>
 <header>  
-  <h1 class="times">  TIMES <img class="logo" src="sampleimg.jpeg">F INDIA </h1>
-<nav>
- <ul>
-   <li class="dropdown">
-   <a href="#"  class="dropbtn">ABOUT US</a>
-   <div class="dropdown-content"> 
-   <a href="ad-dropdown.html">Ad Promote</a>
-   <a href="about-dropdown.html">Review us</a>
-   <li><a href="city.html">CITY</a></li>
-   <li><a href="mainpage.html">HOME</a></li>
-</div>
-</div>   
-</ul>
-</nav>
+  <!-- Masthead/Logo Banner -->
+  <h1 class="times">  TIMES <img class="logo" src="sampleimg.jpeg" alt="Logo">F INDIA </h1>
+  
+  <!-- Primary Navigation Menu -->
+  <nav>
+   <ul>
+     <!-- Dropdown menu for About Us/Promotions (pure CSS-based) -->
+     <li class="dropdown">
+       <a href="#" class="dropbtn">ABOUT US</a>
+       <div class="dropdown-content"> 
+         <a href="ad-dropdown.html">Ad Promote</a>
+         <a href="about-dropdown.html">Review us</a>
+         <li><a href="city.html">CITY</a></li>
+         <li><a href="mainpage.html">HOME</a></li>
+       </div>
+     </li>   
+   </ul>
+  </nav>
 </header><br><br>
+
 <p>TOP NEWS</p>
 <hr>
+<!-- Top news stories displayed in a grid structure using a borderless table layout -->
 <table border="2" cellspacing="50" style="border:none;">
 <tr>
+<!-- Left Column: Odisha Train Tragedy -->
 <td  class="tops01">
-<img class="imgg"src="topnews01img.jpeg">
+<img class="imgg"src="topnews01img.jpeg" alt="Train Tragedy Thumbnail">
 <a href="city.html"><br>
 Railways' Report On Odisha Train
  Tragedy Points To "Human Error"
@@ -33,12 +49,13 @@ More than 298 dead after Odisha accident
 </div>
 </td>
 
+<!-- Right Column: IPL Final Match Report -->
 <td style="background-color:#d9d9d9;
 padding:30px;
 width:600px;
 height:100px;
 margin-left:70%;">
-<img  class="imgg" src="topnew02img.jpeg">
+<img  class="imgg" src="topnew02img.jpeg" alt="IPL Trophy Thumbnail">
 <a href="city.html"><br>
 CSK vs GT, IPL 2023 Final: Ravindra Jadeja finishes with a flourish as Chennai Super Kings defeat Gujarat Titans by 5 wickets, win title for 5th time
 </div></td>
